@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW6</title>
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="homework">
+    <div class="container">
+        <div class="homework__inner">
+            <div class="homework__content">
+                <div class="homework__type">Homework 6</div>
+                <ul>
+                    <li class="homework__item">
+                        <div class="homework__title">Task 1</div>
+                        <div class="homework__description">1. Створити обєкт який описує тварину (назву, вагу, вік, середню швидкість), і наступні функції для роботи з ним:
+                            Функція яка виведе всю інформацію про тварину. Функція яка виведе за скільки тварина зможе подолати 1000 км. (врахуйте що тварина може рухатись не більше 12 годин у день).
+                            Функція яка зможе змінити назву тварини на більш детальну. </div>
+                        <input value="Рішення" onclick="task1()" class="button" type="button">
+                    </li>
+                    <li class="homework__item">
+                        <div class="homework__title">Task 2</div>
+                        <div class="homework__description">2. Створіть обєкт який має у собі 2 довжини сторін фігури. Додайте методи які будуть робити наступне - рахувати площу фігури, периметр фігури,
+                            зроблять фігуру 3-д, зададуть назву фігури, переведуть значення з сантиметрів у метри.</div>
+                        <input value="Рішення" onclick="task2()" class="button" type="button">
+                    </li>
+                    <li class="homework__item">
+                        <div class="homework__title">Task 3</div>
+                        <div class="homework__description">3. Створимо аналог списка покупок (мінімум 5 покупок з всіма заданими пропертями. )
+
+                            {
+
+                            tomato: {
+
+                            count: 5,
+                            price: 50,
+                            buy: false,
+                            outOfstore: true
+
+                            } , ...
+
+                            }
+                            Виводимо список покупок - спочатку ті які є в магазині потім яких немає,
+                            Виводимо список покупок які ми купили.
+                            Додаємо функцію яка дозволить купити продукт.
+                            Додаємо функцію яка просумує всі зроблені покупки і виведе результат.(не забуваємо що є значення кількості та ціни за одиницю товару)
+                            Додаємо можливість збільшувати кількість товару.
+                            Додаємо можливість зменшувати кількість товару(менше 0 бути не може).
+                        </div>
+                        <input value="Рішення" onclick="task3()" class="button" type="button">
+                    </li>
+                    <li class="homework__item">
+                        <div class="homework__title">Task 4</div>
+                        <div class="homework__description">4. Задана колекція [{name: "Yura", age: 55, hobby: ["films", "games", "hiking"], type: "Admin"}, {}, {},{}]. Вивести всіх адмінів. Вивести середній вік усіх працівників. Вивести тільки унікальні хоббі працівників.
+
+                        </div>
+                        <input value="Рішення" onclick="task4()" class="button" type="button">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>

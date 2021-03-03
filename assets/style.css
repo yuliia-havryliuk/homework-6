@@ -1,0 +1,71 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+li{
+    list-style-type: none;
+}
+body{
+    background-color: floralwhite;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+
+}
+.homework__inner{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: tomato 2px solid ;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: rgba(255,8,0,0.6) 0 0 50px;
+}
+.homework__type{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    padding: 10px;
+}
+.homework__item {
+    padding: 10px;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.homework__item:hover{
+    box-shadow: rgba(0,255,233,0.41) 0 0 10px;
+    transition: .2s linear;
+}
+
+.homework__title{
+    font-weight: 500;
+    font-size: 18px;
+}
+.homework__description{
+    font-weight: 300;
+    padding-bottom: 5px;
+
+}
+.button{
+    border: tomato 1px solid;
+    background-color: transparent;
+    border-radius: 5px;
+    color: tomato;
+    padding: 5px 7px;
+
+}
+.button:hover{
+    background-color: tomato;
+    color: #ffffff;
+    transition: .2s linear;
+}
