@@ -307,16 +307,24 @@ function uniqueHobbies(){
     return allHobbies
 }
 
-//фільтруємо масив хоббі
+//фільтруємо масив хоббі - спосіб 1
 function findUniqueHobby(){
-    let findUniqueHobbies = allHobbies.filter(a=>allHobbies.filter(b=>b===a).length===1)
-    console.log(findUniqueHobbies)
+    const findUniqueHobbies = allHobbies.filter(a => allHobbies.filter(b => b === a).length === 1)
+    console.log(`Унікальні хоббі юзерів: ${findUniqueHobbies.join(' , ')}.`)
 }
 
+//фільтруємо масив хоббі - спосіб 2
+function findUniqueHobby2(){
+    const findUniqueHobbies = allHobbies.filter(
+        (item) => allHobbies.indexOf(item) === allHobbies.lastIndexOf(item)
+    );
+    console.log(`Унікальні хоббі юзерів: ${findUniqueHobbies.join(' , ')}.`)
+}
 function task4(){
     showAdmin()
     userCounter()
     midAge()
     uniqueHobbies()
     findUniqueHobby()
+    findUniqueHobby2()
 }
